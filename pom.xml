@@ -1,14 +1,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
- 
+  
   <groupId>org.bytesizebook.com.giude.boot</groupId>
   <artifactId>maven-archetype-webapp</artifactId>
   <version>1.0</version>
   <packaging>maven-archetype</packaging>
 
   <name>maven-archetype-webapp</name>
-  <description>The starting code for the first three chapters of Guide to Web Development with Java, 2nd edition.</description>
+  <description>An archetype to create the starting code for the first three chapters of Guide to Web Development with Java, 2nd edition.</description>
   <url>https://github.com/Timdotdowney</url>
   <licenses>
     <license>
@@ -37,6 +37,18 @@
     <developerConnection>scm:git:git@github.com/Timdotdowney/maven-archetype-webapp.git</developerConnection>
     <url>http://github.com/Timdotdowney/maven-archetype-webapp/tree/main</url>
   </scm>
+
+  <distributionManagement>
+    <snapshotRepository>
+      <id>ossrh</id>
+      <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
+    </snapshotRepository>
+    <repository>
+      <id>ossrh</id>
+      <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+    </repository>
+  </distributionManagement>
+
   
   <build>
     <extensions>
