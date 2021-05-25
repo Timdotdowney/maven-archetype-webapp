@@ -1,2 +1,52 @@
-# pack-refs with: peeled fully-peeled 
-86883849fc5b9804acad26886391e606949c475d refs/remotes/origin/main
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+ 
+  <groupId>org.bytesizebook.com.giude.boot</groupId>
+  <artifactId>maven-archetype-webapp</artifactId>
+  <version>1.0</version>
+  <packaging>maven-archetype</packaging>
+
+  <name>maven-archetype-webapp</name>
+  <description>The starting code for the first three chapters of Guide to Web Development with Java, 2nd edition.</description>
+  <url>https://github.com/Timdotdowney</url>
+  <licenses>
+    <license>
+      <name>Apache License, Version 2.0</name>
+      <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+      <comments>A business-friendly OSS license</comments>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <name>Tim Downey</name>
+      <email>downeyt@cs.fiu.edu</email>
+      <url>http://www.bytesizebook.com</url>
+      <organization>Bytesizebook</organization>
+      <organizationUrl>http://www.bytesizebook.com</organizationUrl>
+      <roles>
+        <role>architect</role>
+        <role>developer</role>
+      </roles>
+      <timezone>America/New_York</timezone>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:git:git://github.com/Timdotdowney/maven-archetype-webapp.git</connection>
+    <developerConnection>scm:git:git@github.com/Timdotdowney/maven-archetype-webapp.git</developerConnection>
+    <url>http://github.com/Timdotdowney/maven-archetype-webapp/tree/main</url>
+  </scm>
+  
+  <build>
+    <extensions>
+      <extension>
+        <groupId>org.apache.maven.archetype</groupId>
+        <artifactId>archetype-packaging</artifactId>
+        <version>3.1.1</version>
+      </extension>
+    </extensions>
+  </build>
+  
+
+</project>
